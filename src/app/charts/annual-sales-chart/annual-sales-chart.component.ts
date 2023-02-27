@@ -37,6 +37,7 @@ export class AnnualSalesChartComponent implements OnInit {
   public lineChartLegend = true;
 
   
+  
   constructor() { }
 
   ngOnInit(): void {

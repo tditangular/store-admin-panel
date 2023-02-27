@@ -21,6 +21,11 @@ import { ProductSalesChartComponent } from './charts/product-sales-chart/product
 import { SalesTrafficChartComponent } from './charts/sales-traffic-chart/sales-traffic-chart.component';
 import { AnnualSalesChartComponent } from './charts/annual-sales-chart/annual-sales-chart.component';
 import { StoreSessionsChartComponent } from './charts/store-sessions-chart/store-sessions-chart.component';
+import { OrdersTableComponent } from './orders-table/orders-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MiniCardComponent } from './mini-card/mini-card.component';
 
 
 
@@ -33,7 +38,9 @@ import { StoreSessionsChartComponent } from './charts/store-sessions-chart/store
     ProductSalesChartComponent,
     SalesTrafficChartComponent,
     AnnualSalesChartComponent,
-    StoreSessionsChartComponent
+    StoreSessionsChartComponent,
+    OrdersTableComponent,
+    MiniCardComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +55,10 @@ import { StoreSessionsChartComponent } from './charts/store-sessions-chart/store
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
